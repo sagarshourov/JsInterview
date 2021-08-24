@@ -1,0 +1,64 @@
+#container {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5em;
+  background-color: #f9f9f9;
+  overflow: auto;
+  padding: 2em;
+}
+
+.col {
+  float: left;
+  clear: right;
+}
+.lift {
+  width: 40%;
+}
+.lift > div {
+  width: 33%;
+}
+.lift > div > div {
+  height: 310px;
+  width: 1px;
+  background-color: cadetblue;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.persons {
+  width: 60%;
+}
+
+.lift span {
+  background-color: cadetblue;
+  padding: 15px 10px;
+  color: #fff;
+  margin-left: -14px;
+  position: absolute;
+  transition-duration: 2s;
+
+}
+
+#liftspan-a {
+    bottom: 160px;
+    transition-duration: 2s;
+}
+#liftspan-b {
+    bottom: 210px;
+    transition-duration: 2s;
+}
+#liftspan-c {
+    bottom: 60px;
+    transition-duration: 2s;
+}
+
+.row {
+  width: 100%;
+  clear: both;
+}
+
+.bb-1 {
+  border-bottom: 1px solid cadetblue;
+  height: 50px;
+}

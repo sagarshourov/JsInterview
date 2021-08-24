@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div class="col lift">
+        <div class="col">
+          <div>
+            <span class="elevator" pos="160" id="liftspan-a">A</span>
+          </div>
+        </div>
+        <div class="col">
+          <div>
+            <span class="elevator" pos="210" id="liftspan-b">B</span>
+          </div>
+        </div>
+        <div class="col">
+          <div>
+            <span class="elevator" pos="60" id="liftspan-c">C</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col persons">
+        <div class="row bb-1">
+          <button>6</button>
+        </div>
+
+        <div class="row bb-1">
+          <button>5</button>
+        </div>
+
+        <div class="row bb-1">
+          <button>4</button>
+        </div>
+        <div class="row bb-1">
+          <button>3</button>
+        </div>
+        <div class="row bb-1">
+          <button>2</button>
+        </div>
+        <div class="row bb-1">
+          <button>1</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      let Elevators = new Elevator();
+
+      document.body.addEventListener("click", (event) => {
+        if (event.target.nodeName == "BUTTON") {
+          var position = parseInt(event.target.textContent);
+          Elevators.MoveElevator(position - 1);
+        }
+      });
+    </script>
+  </body>
+</html>
